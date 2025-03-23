@@ -1,15 +1,23 @@
 import './index.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Dashboard from "./pages/Dashboard"
+import Inventory from "./pages/Inventory"
+import Navbar from "./components/Navbar"
 
 function App() {
-
   return (
-    <>
-      <div className="p-8 bg-gray-100 min-h-screen">
-        <h1 className="text-3xl font-bold text-blue-600">Inventory Management System</h1>
-        <p className="mt-2 text-gray-700">Tailwind CSS is working!</p>
+    <Router>
+      <div className="min-h-screen bg-gray-100">
+        <Navbar />
+        <div className="p-4">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/inventory" element={<Inventory />} />
+          </Routes>
+        </div>
       </div>
-    </>
-  )
+    </Router>
+  );
 }
 
 export default App
