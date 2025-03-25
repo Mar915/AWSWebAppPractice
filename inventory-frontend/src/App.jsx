@@ -1,8 +1,8 @@
-import './index.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Dashboard from "./pages/Dashboard"
-import Inventory from "./pages/Inventory"
-import Navbar from "./components/Navbar"
+import './index.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Inventory from "./pages/Inventory";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
