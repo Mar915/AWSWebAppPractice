@@ -1,4 +1,4 @@
-import './index.css';
+import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Inventory from "./pages/Inventory";
@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gray-600/45">
         <Navbar />
         <div className="p-4">
           <Routes>

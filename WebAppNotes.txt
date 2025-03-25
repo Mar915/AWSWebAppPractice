@@ -1,0 +1,95 @@
+Current Task:
+	$working on 'Navbar.jsx' frontend
+
+
+TODO:
+	- work on 'components' and 'pages' files
+	- put this txt file on git 
+
+
+
+env setup: 
+
+	$node.js, react, tailwind: get the versions for these
+
+
+src file structure: 
+	
+	$link1 - https://mitcommlab.mit.edu/broad/commkit/file-structure/ 
+	$link2 - https://medium.com/@smart_byte_labs/organize-like-a-pro-a-simple-guide-to-go-project-folder-structures-e85e9c1769c2
+
+	$src/
+	├── components/        # Reusable UI blocks
+	│   ├── Navbar.jsx
+	│   ├── InventoryTable.jsx
+	│   ├── InventoryForm.jsx
+	│   └── SummaryCards.jsx
+	├── pages/             # Full-page views
+	│   ├── Dashboard.jsx
+	│   ├── Inventory.jsx
+	│   └── Login.jsx
+	├── App.jsx            # Routing logic
+	└── main.jsx   
+
+
+
+
+frontend:
+	$react flow {'site address' -> 'index.html' -> 'main.jsx' -> 'App.jsx'
+	
+	$Tailwind:
+		- starts up in 'index.css' via @import "tailwindcss";
+		- Cheat Sheet: https://nerdcave.com/tailwind-cheat-sheet
+		- react icons https://react-icons.github.io/react-icons/icons/fc/
+	
+	$HTML to JSX:
+		1)Paste the HTML
+		2)Replace class with className
+		3)Replace <a href="..."> with <Link to="..."> (for internal navigation)
+		4)Wrap toggle elements in useState if needed
+		5)Convert inline event handlers to JSX format (onClick={...})
+	
+	
+	$Navbar.jsx:
+		- boilerplate code src: https://flowbite.com/docs/components/navbar/#sticky-navbar
+		- 
+		
+	$className structure: className="
+								layout-position
+								width-height
+								padding-margin
+								border-radius-border
+								bg-color text-color font
+								flexbox-alignment
+								hover-focus
+								responsive dark-mode
+							"
+							
+	$Possible color scheme (from logo):	#05041a – deep midnight blue (background)
+										#ffffff – bright white (moon, snow, hood)
+										#ffe100 – corn gold yellow (face)
+										#f97c00 – fiery orange (corn shading)
+										#0e97f7 – electric blue (jacket body)
+										#4c0d65 – rich purple (jacket trim & pants)
+										#f52f59 – magenta-pink red (jacket strings & pants shadows)
+										#f8b406 – sunny yellow (boots)
+										#000000 – solid black (glasses & outlines)
+										#35cfff – neon sky blue (teeth glow)
+	
+	$https://www.colorhexa.com/
+	
+	$flexbox guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+	
+backend:
+
+
+
+README:
+
+
+
+
+resume:
+
+	$setting up environment:
+		- Initialized a modern React project using Vite for fast dev/build performance, Integrated Tailwind CSS v4.0 using the latest plugin setup recommended in official documentation
