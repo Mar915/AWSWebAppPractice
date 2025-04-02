@@ -5,12 +5,12 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 start-0 z-20 w-full h-16 shadow-md border-b border-gray-800 bg-[#05041a] text-white shadow-md">
+    <nav className="fixed top-0 start-0 z-20 w-full h-16 border-b border-gray-800 bg-[#05041a] text-white shadow-md">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2 h-full">
         {/* Logo + App Title */}
         <Link to="/" className="flex items-center space-x-3">
           <img src="/elote cozy4.jpg" className="h-8" />
-          <span className="text-2xl font-semibold whitespace-nowrap text-[#ffffff]">
+          <span className="text-2xl font-semibold whitespace-nowrap text-white">
             Inventory App
           </span>
         </Link>
@@ -38,16 +38,20 @@ function Navbar() {
 
         {/* Responsive menu links */}
         <div
+          id="navbar-sticky"
           className={`${
             isOpen ? "block" : "hidden"
-          } items-center justify-between w-full md:flex md:w-auto md:order-1`}
-          id="navbar-sticky"
+          } w-full md:flex md:w-auto md:order-1 
+          p-4 mt-4 md:p-0 md:mt-0 
+          border border-white/30 
+          md:border-0 rounded-lg text-white
+          font-medium items-center`}
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 font-medium border border-gray-100 md:border-0 rounded-lg bg-gray-50 md:bg-white md:flex-row md:space-x-8 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col md:flex-row md:space-x-8">
             <li>
               <Link
                 to="/"
-                className="block px-3 py-2 text-white bg-purple-700 rounded md:bg-transparent md:text-purple-700 md:p-0"
+                className="block text-white bg-purple-600 hover:bg-purple-700 font-medium text-sm px-4 py-2 rounded-lg transition transform hover:scale-105"
               >
                 Dashboard
               </Link>
@@ -55,7 +59,7 @@ function Navbar() {
             <li>
               <Link
                 to="/inventory"
-                className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block text-white bg-purple-600 hover:bg-purple-700 font-medium text-sm px-4 py-2 rounded-lg transition transform hover:scale-105"
               >
                 Inventory
               </Link>
