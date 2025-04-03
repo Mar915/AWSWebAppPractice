@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { PiHamburgerDuotone } from "react-icons/pi";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,21 @@ function Navbar() {
           </span>
         </Link>
 
-        {/* Right-side buttons */}
+        {/* Hamburger toggle */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            type="button"
+            className="inline-flex items-center justify-center w-10 h-10 text-white text-xl bg-purple-600 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
+            aria-controls="navbar-sticky"
+            aria-expanded={isOpen}
+          >
+            {/* Hamburger icon here */}
+            <PiHamburgerDuotone className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Get Started Button */}
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0">
           <button
             type="button"
@@ -23,18 +38,9 @@ function Navbar() {
           >
             Get Started
           </button>
-
-          {/* Hamburger toggle */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            type="button"
-            className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-sticky"
-            aria-expanded={isOpen}
-          >
-            {/* Add icon here if needed */}
-          </button>
         </div>
+
+
 
         {/* Responsive menu links */}
         <div
@@ -43,7 +49,7 @@ function Navbar() {
             isOpen ? "block" : "hidden"
           } w-full md:flex md:w-auto md:order-1 
           p-4 mt-4 md:p-0 md:mt-0 
-          border border-white/30 
+          bg-[#05041a] border border-white
           md:border-0 rounded-lg text-white
           font-medium items-center`}
         >
