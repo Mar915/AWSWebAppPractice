@@ -1,10 +1,10 @@
 Current Task:
-	$working on 'Navbar.jsx' frontend
+	$working on 'InventoryTable.jsx' frontend
 
 
 TODO:
 	- work on 'components' and 'pages' files
-	- put this txt file on git 
+	- setup AWS Lambda and DynamoDB
 
 
 
@@ -53,6 +53,9 @@ frontend:
 	$Navbar.jsx:
 		- boilerplate code src: https://flowbite.com/docs/components/navbar/#sticky-navbar
 		- 
+	
+	$InventoryTable.jsx:
+		-
 		
 	$className structure: className="
 								layout-position

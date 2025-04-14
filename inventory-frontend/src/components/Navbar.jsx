@@ -7,10 +7,12 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 start-0 z-20 w-full h-16 border-b border-gray-800 bg-[#05041a] text-white shadow-md">
+
+      {/* Main navbar layout container: holds logo, buttons, and hamburger toggle */}
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2 h-full">
         {/* Logo + App Title */}
         <Link to="/" className="flex items-center space-x-3">
-          <img src="/elote cozy4.jpg" className="h-8" />
+          <img src="/images/logo.jpg" className="h-8" />
           <span className="text-2xl font-semibold whitespace-nowrap text-white">
             Inventory App
           </span>
