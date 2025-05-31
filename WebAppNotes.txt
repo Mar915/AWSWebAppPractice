@@ -35,7 +35,7 @@ src file structure:
 
 
 frontend:
-	$react flow {'site address' -> 'index.html' -> 'main.jsx' -> 'App.jsx'
+	$react flow {'site address' -> 'index.html' -> 'main.jsx' -> 'App.jsx'}
 	
 	$Tailwind:
 		- starts up in 'index.css' via @import "tailwindcss";
@@ -43,11 +43,11 @@ frontend:
 		- react icons https://react-icons.github.io/react-icons/icons/fc/
 	
 	$HTML to JSX:
-		1)Paste the HTML
-		2)Replace class with className
-		3)Replace <a href="..."> with <Link to="..."> (for internal navigation)
-		4)Wrap toggle elements in useState if needed
-		5)Convert inline event handlers to JSX format (onClick={...})
+		1) Paste the HTML
+		2) Replace class with className
+		3) Replace <a href="..."> with <Link to="..."> (for internal navigation)
+		4) Wrap toggle elements in useState if needed
+		5) Convert inline event handlers to JSX format (onClick={...})
 	
 	
 	$Navbar.jsx:
